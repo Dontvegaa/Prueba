@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica3</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .header{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .column.side {
+            width: 15%;
+        }
+
+        .column.middle{
+            width: 70%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 1opx;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> Práctica CSS</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#">INICIO</a>
+        <a href="#">MISION</a>
+        <a href="#">VISION</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Columna 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ad et alias cum impedit aperiam, excepturi accusantium esse minima deserunt temporibus iure vitae ducimus in neque cumque aliquid debitis non?</p>
+        </div>
+
+        <div class="column middle">
+            <h2>Columna 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, veniam vel? Temporibus nesciunt nulla nihil vero, et ullam in dolorum repellendus mollitia repudiandae magni placeat. Quam consequuntur vel voluptatum quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem dolores impedit, voluptates quisquam deserunt eligendi facilis accusantium quae eaque voluptatibus corporis nam vero iusto culpa sapiente minus! Tempora, atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam placeat ex omnis dolorem enim cum eius distinctio repellendus doloribus! Dolorem dignissimos dolores, eum iure harum veniam explicabo. Quibusdam, exercitationem maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora quae voluptas obcaecati expedita exercitationem! Ipsum officiis voluptatem quo, accusamus minus distinctio assumenda ratione voluptas harum cum obcaecati earum quae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ad et alias cum impedit aperiam, excepturi accusantium esse minima deserunt temporibus iure vitae ducimus in neque cumque aliquid debitis non?</p>
+        </div>
+
+        <div class="column side">
+            <h2>Columna 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ad et alias cum impedit aperiam, excepturi accusantium esse minima deserunt temporibus iure vitae ducimus in neque cumque aliquid debitis non?</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Agregar aquí el contenido del pie de página</p>
+    </div>
+
+</body>
+</html>
