@@ -8,8 +8,6 @@
     <script src="elec.js"></script>
 </head>
 <body>    
-    <div style="width: 100%;">
-        <div style="width:50%; float:left;">
             <form  name="form1">        
                 <table border="1">
                     <tr>
@@ -28,35 +26,14 @@
                         <td><input type="number" name="candidato3"></td>
                     </tr>
                     <tr>
-                        <td style="text-align: center;" colspan="2"><input type="button" value="Calcular" onclick="calcular" ></td>
+                        <td style="text-align: center;" colspan="2"><input type="button" value="Calcular" onclick=mostrar() ></td>
                     </tr>
                 </table>
             </form>
-        </div>
-        <div style="width: 50%;float:right;">
-            <table  border="1">
-                <tr>
-                    <th>Resultado de las  Elecciones 2024</th>
-                </tr>
-                <tr>
-                    <td>Ingrese la cantidad de votos del primer candidato</td>
-                    <td><input type="number" name="candidato1"></td>
-                </tr>
-                <tr>
-                    <td>Ingrese la cantidad de votos del segundo candidato</td>
-                    <td><input type="number" name="candidato2"></td>
-                </tr>
-                <tr>
-                    <td>Ingrese la cantidad de votos del tercer candidato</td>
-                    <td><input type="number" name="candidato3"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="Calcular" onclick="" ></td>
-                </tr>
-        </div>    
+            
+            <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+            <div id="resultados"></div>
 
-    </div>    
-    <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
 
 </body>
 </html>
