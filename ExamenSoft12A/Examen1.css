@@ -1,0 +1,75 @@
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 15px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.home{
+    padding: 15px;
+    
+}
+
+.topnav p{
+    margin-left: 30px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.conte{
+    margin-left: 50px;
+}
+
+.mapa, .tabla {
+        float: left;
+        padding: 10px;
+    }
+
+    .tabla {
+        width: 40%;
+    }
+
+    .mapa{
+        width: 55%;
+    }
+
+img.mapa{
+    width: 50%;
+}
+table{
+    width: 100%;
+}
+
+.map{
+    width: 100%;
+}
+
+th,td{
+    text-align: left;
+    font-size: 150%;
+}
+
+img.social1{
+    width: 8%;
+}
+img.social2{
+    width: 8%;
+}
+img.social3{
+    width: 8%;
+}
+img.social4{
+    width: 8%;
+}

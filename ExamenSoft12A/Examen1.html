@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Examen1.css">
+    
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/tiledwebmap.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+</head>
+<body>
+        
+    <div class="topnav">
+        <p>Laboratorio #2 Diseño Paginas Web</p>
+        <a href="#">Ejercicios</a>
+        <a href="#">Contactanos</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca de</a>
+    </div>
+
+    
+    <div class="conte">
+        <div class="home"><p><aHome / Contact</p></div>
+        <div  id="container" class="mapa"></div>
+        <div class="tabla">
+            <table>
+                <tr><th>Detalles</th></tr>
+                <tr><td>3481 Melrose Place</td></tr>
+                <tr><td>Beverly Hills</td></tr>
+                <tr><td>P:(503)2456-7890</td></tr>
+                <tr><td>E: <a href="">alumno@itca.com</a></td></tr>
+                <tr><td>Horario:de lunes-viernes: 9:00AM to 5:00 pm</td></tr>
+                <tr><td><img class="social1" src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="facebook">  <img class="social2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsb6pfWCg3HYyyIQMHSY6DMbiL4s0DJH5n93TJXgI4hQ&s" alt="in">  <img class="social3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4djPZwLWkjk1zuJKKWfOsoZdl6gxFlb4Cx_m9bYtSlA&s" alt="twitter"> <img class="social4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvON-LLDrfSWNZyw2DEdIMvCH1b2lPMTnc_PzjgIzbg&s" alt="google"></td></tr>
+
+            </table>
+        </div>
+    </div>
+<script>
+    Highcharts.mapChart('container', {
+    chart: {
+        margin: 0
+    },
+
+    title: {
+        text: ''
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    navigation: {
+        buttonOptions: {
+            align: 'left',
+            theme: {
+                stroke: '#e6e6e6'
+            }
+        }
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            alignTo: 'spacingBox'
+        }
+    },
+
+    mapView: {
+        center: [-88.9346, 13.7263],
+        zoom: 8
+    },
+
+    tooltip: {
+        pointFormat: '{point.name}'
+    },
+
+    legend: {
+        enabled: true,
+        title: {
+            text: 'Attractions in Oslo'
+        },
+        align: 'left',
+        symbolWidth: 20,
+        symbolHeight: 20,
+        itemStyle: {
+            textOutline: '1 1 1px rgba(255,255,255)'
+        },
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        float: true,
+        borderColor: '#e6e6e6',
+        borderWidth: 1,
+        borderRadius: 2,
+        itemMarginBottom: 5
+    },
+
+    plotOptions: {
+        mappoint: {
+            dataLabels: {
+                enabled: false
+            }
+        }
+    },
+
+    series: [{
+        type: 'tiledwebmap',
+        name: 'Basemap Tiles',
+        provider: {
+            type: 'OpenStreetMap'
+        },
+        showInLegend: false
+    
+    }]
+});
+</script>
+</body>
+</html>
