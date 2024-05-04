@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido{
+    margin-left: 6%;
+}
+
+table{
+    width: 55%;
+    border-collapse: collapse; 
+}
+
+th, td { 
+    text-align: left; 
+    padding: 2px;
+}
+
+#myChart{
+    background-color: rgb(56, 56, 56);
+    border-radius: 7%;
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.input-completo{
+    width: 99%;
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    padding: 8px;
+}
+
+.input-semicompleto{
+    width: 90%;
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    padding: 8px;
+}
+
+.boton{
+    background-color: rgb(55, 85, 218);
+    width: 20%;
+    color: white;
+    border: 1px solid #dddddd; 
+    text-align: center; 
+    border-radius: 9%;
+    padding: 8px;
+}
